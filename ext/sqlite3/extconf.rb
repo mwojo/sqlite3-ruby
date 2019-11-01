@@ -13,8 +13,6 @@ end
 # enable column metadata
 $CFLAGS << ' -DSQLITE_ENABLE_COLUMN_METADATA=1'
 
-find_library 'pthread', 'pthread_create' # 1.8 support. *shrug*
-
 # Functions defined in 1.9 but not 1.8
 have_func('rb_proc_arity')
 
